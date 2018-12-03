@@ -9,6 +9,7 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build-prompt.js",
     "jenkins": "node build/build-jenkins.js",
+    "gitpush": "node build/git-push.js",
     "publish": "node build/publish-prompt.js",
     "rollback": "node build/rollback.js",
     "tag": "node build/tag.js",
