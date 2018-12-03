@@ -7,10 +7,10 @@ const commitMessage = `"test: testParam=${testParam} & xuanxiang=${xuanxiang}"`;
 
 console.log(111);
 
-execSync(`git add -A && git commit -m ${commitMessage}`, { stdio: 'ignore' });
+execSync(`git add -A && git commit -m ${commitMessage}`);
 
 console.log(222);
 
-execSync('git push origin HEAD:refs/heads/master', { stdio: 'inherit' });
+execSync('git push -f origin HEAD:refs/heads/master');
 
 console.log(333);
