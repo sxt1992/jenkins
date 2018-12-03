@@ -6,3 +6,5 @@ const xuanxiang = process.argv[3];
 const commitMessage = `test: testParam=${testParam} & xuanxiang=${xuanxiang}`;
 
 execSync(`git add -A && git commit -m ${commitMessage}`, { stdio: 'ignore' });
+
+execSync('git push origin HEAD:master', { stdio: 'inherit' });
