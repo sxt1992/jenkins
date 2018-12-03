@@ -7,4 +7,4 @@ const commitMessage = `test: testParam=${testParam} & xuanxiang=${xuanxiang}`;
 
 execSync(`git add -A && git commit -m ${commitMessage}`, { stdio: 'ignore' });
 
-execSync('git push origin HEAD:master', { stdio: 'inherit' });
+execSync('git push origin HEAD:refs/heads/master', { stdio: 'inherit' });
